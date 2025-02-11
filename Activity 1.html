@@ -1,45 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sematics in htmk</title>
+        <title>Personal Info</title>
     </head>
     <body>
-        <header>
-            <h1>
-Navigation Link
-            </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#referances">Referances</a>
-                    </li>
-                    <li>
-                        <a href="#About">About</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h1>Elephants</h1>
-                <p>Elephants are wild animals.</p>
-            </section>
-            <figure>
-                <figcaption>Elephants</figcaption>
-                <img src="Elephant pic.jpg" alt="Elephant Image">
-            </figure>
-            <audio controls>
-                <source src="Elephant Audio.mp3" type="audio/mpeg">
-            </audio>
-            <video controls width="500" height="200">
-                <source src="Elephant Video.mp4" type="video/mp4">
-            </video>
-            <footer>
-                <b><p>Contact me 0947 304 456</p></b>
-            </footer>
-        </main>
+        <h1>Personal Info</h1>
+        <form>
+            <label>Name</label><br>
+            <input type="text" id="Name"><br>
+            <label>Email</label><br>
+            <input type="text" id="Email"><br>
+            <label>Contact Number</label><br>
+            <input type="Password" id="Contact Number"><br>
+            <label>Gender</label><br>
+            <input type="Radio" id="Female" name="Gender" value="Female">Female<br>
+            <input type="Radio" id="Male" name="Gender" value="Male">Male<br>
+            <label>Age</label><br>
+            <input type="number" id="Age"><br>
+            <label>Favourite City</label><br>
+            <input type="checkbox" id="Favourite City" value="Perth">Perth<br>
+            <input type="checkbox" id="Favourite City" value="New Dehli">New Dehli<br>
+            <input type="Submit">
+        </form>
     </body>
 </html>
