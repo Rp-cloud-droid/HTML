@@ -1,19 +1,27 @@
-h3{
-    color:aqua;
+body{
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color:rgb(219, 168, 245) ; 
+   color: cornflowerblue;
 }
-h4{
-    color:aquamarine;
+h1{
+    color:deepskyblue;
 }
-*{
-    font-size: 30px; 
-    font-weight: 500;
+a{
+    color: dodgerblue;
+    text-decoration: none;
 }
-.myclass{
-    color:green;
+a:hover{
+color: lightblue;
 }
-#myid{
-    color:khaki;
-}
-h5,p{
-    color:coral;
-}
+ul li::before {
+
+    content: "🚀 ";
+    
+    }
+p::first-letter {
+
+        font-size: 200%;
+        
+        color: #574fe4;
+        
+        }
