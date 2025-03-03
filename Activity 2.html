@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Transform</title>
+        <title>Opaque</title>
         <style>
-            div{
-                background-color: aqua;
-                width: 200px;
-                height: 200px;
-                border: 2px solid black;
-            }
-            #div1{
-transform: rotate(180deg);
-            }
+           div{
+            background-color: rgb(217, 204, 29);
+            padding: 20px;
+           }
+           div.first{
+            opacity: 0.1;
+           }
+           div.second{
+            opacity: 0.3;
+           }
+           div.third{
+            opacity: 0.5;
+           }
         </style>
     </head>
     <body>
-<h1>Transform</h1>
-<div>Codingal</div>
-<div id="div1">Codingal</div>
-
+        <div class="first">0.1</div>
+        <div class="second">0.3</div>
+        <div class="third">0.5</div>
+        <div>opacity1</div>
     </body>
 </html>
