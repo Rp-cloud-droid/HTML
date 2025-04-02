@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-
 <html>
+    <head>
+        <title>Methods in JavaScript</title>
+    </head>
+    <body>
+        <h2>Methods in JavaScript</h2>
+        <p>Basic Methods</p>
+        <script>
+            var str = "AmAzInG";
+            document.write(str.toUpperCase());
+            document.write("<br>");
+            document.write(str.toLowerCase());
+            document.write("<br>");
+            document.write(str.startsWith('i'));
+            document.write("<br>");
 
-<head>
-
-</head>
-
-<body>
-
-<button onclick="myfunction(5,2)">Execute JS function</button>
-
-
-<script>
-
-function myfunction(x, y)
-
-{
-
-document.write(x*y);
-
-}
-
-</script>
-
-</body>
-
+            var str1 = "I learnt about Methods";
+            var patt = new RegExp("about");
+            var res = patt.test(str);
+            document.write(res)
+        </script>
+    </body>
 </html>
