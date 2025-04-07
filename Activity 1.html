@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Methods in JavaScript</title>
+        <title>Tables</title>
     </head>
     <body>
-        <h2>Methods in JavaScript</h2>
-        <p>Basic Methods</p>
+        <h1>Info</h1>
+        <p id="demo"></p>
         <script>
-            var str = "AmAzInG";
-            document.write(str.toUpperCase());
-            document.write("<br>");
-            document.write(str.toLowerCase());
-            document.write("<br>");
-            document.write(str.startsWith('i'));
-            document.write("<br>");
-
-            var str1 = "I learnt about Methods";
-            var patt = new RegExp("about");
-            var res = patt.test(str);
-            document.write(res)
+            var person = {
+                firstName: "I",
+                age: 20,
+            };
+            document.getElementById("demo").innerHTML = person.firstName
+            + " am " + person.age + " years old ";
         </script>
     </body>
 </html>
