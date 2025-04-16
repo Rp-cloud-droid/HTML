@@ -1,19 +1,89 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pop and Join</title>
+        <title>Conditions</title>
     </head>
     <body>
-        <h2>Pop and Join</h2>
-        <p id="myjoin"></p>
-        <p id="myfirstpop"></p>
-        <p id="mysecondpop"></p>
+        <h2>Conditions</h2>
+        <p>Click the button to get a time-based greeting:</p>
+        <button onclick="myFunction()">Try it</button>
+        <p id="hour"></p>
+        <p id="greet"></p>
         <script>
-            var fruits = ["Banana", "Orange", "Apple", "Mango"];
-            document.getElementById("myjoin").innerHTML = fruits.join (" * ");
-            document.getElementById("myfirstpop").innerHTML = fruits;
-            fruits.pop();
-            document.getElementById("mysecondpop").innerHTML = fruits;
+            function myFunction() {
+                var greeting;
+                var time = new Date().getHours();
+
+                if (time < 10) {
+                    greeting = "Good morning";
+                }
+
+                else if (time <20) {
+                    greeting = "Good day";
+                }
+
+                else {
+                    greeting = "Good evening";
+                }
+                documentgetElementById("hour").innerHTML = "Current hour is : "
+                + time;
+                document.getElementsById("greet")innerHTML = greeting;
+            }
         </script>
     </body>
+</html>
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<p>Click the button to get a time-based greeting:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="hour"></p>
+
+<p id="greet"></p>
+
+<script>
+
+function myFunction() {
+
+var greeting;
+
+var time = new Date().getHours();
+
+
+if (time < 10) {
+
+greeting = "Good morning";
+
+}
+
+else if (time < 20) {
+
+greeting = "Good day";
+
+}
+
+else {
+
+greeting = "Good evening";
+
+}
+
+document.getElementById("hour").innerHTML = "Current Hour is : " + time;
+
+document.getElementById("greet").innerHTML = greeting;
+
+}
+
+</script>
+
+</body>
+
 </html>
