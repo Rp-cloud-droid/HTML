@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Boolean and Null</title>
-</head>
-<body>
-    <h2>JavaScript Data Types</h2>
-<script>
-    var a = 2;
-    var b = 6;
-    var c = 6;
-    var d = null;
-    var e;
-    document.write("a and b are equal : " + (a==b));
-    document.write("<br>");
-    document.write("b and c are equal : " + (b==c));
-    document.write("<br>");
-    document.write("The value of d is : " + d);
-    document .write("<br>");
-    document.write("The value of e is : " + e);
-</script>
-</body>
+    <head>
+        <title>Class in JavaScript</title>
+    </head>
+    <body>
+        <h2>Class in JavaScript</h2>
+        <p id="student1"></p>
+        <p id="student2"></p>
+        <script>
+
+            class student {
+                constructer(name, year) {
+this.name = name;
+this.year = year;
+                }
+                age() {
+                    let date = new Date();
+                    return date.getFullYear() - this.year;
+                }
+            }
+            student1 = new student("Riya", 2014);
+            document.getElementById("student1").innerHTML =
+            "My name is " + student1.name + ". I am born in " + student1.year + ". And my age is " + student1.age();
+
+            student2 = new student("Tina", 2018);
+            document.getElementById("student2").innerHTML =
+            "My name is " + student2.name + ". I am born in " + student2.year + ". And my age is " + student2.age();
+        </script>
+    </body>
 </html>
