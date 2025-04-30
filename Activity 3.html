@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Arrow Function</title>
+        <title>Promise</title>
     </head>
     <body>
-        <h2>Arrow Function in JavaScript</h2>
-        <p id="result"></p>
-
+        <h2>Promises in JavaScript</h2>
+        <p id="demo"></p>
         <script>
-            add = (a, b) => a+b;
-            document.getElementById("result").innerHTML = add(4, 6);
+            function sum(a, b){
+                var sum = a + b;
+                myDisplayer(sum);
+            }
+            let myPromise = new Promise(function(myResolve, myReject) {
+                let x = 0;
+                if (x == 0) {
+                    myResolve ("OK");
+                } else {
+                    myReject("Error");
+                }
+            });
+            myPromise.then(
+                function(value) {sum(5, 5);},
+                function(error) {sum(error);}
+            );
+
         </script>
     </body>
 </html>
