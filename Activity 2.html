@@ -1,89 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Conditions</title>
+        <title>Error Handling</title>
     </head>
     <body>
-        <h2>Conditions</h2>
-        <p>Click the button to get a time-based greeting:</p>
-        <button onclick="myFunction()">Try it</button>
-        <p id="hour"></p>
-        <p id="greet"></p>
+        <h2>Error Handling</h2>
+        <p id="error_message"></p>
+
         <script>
-            function myFunction() {
-                var greeting;
-                var time = new Date().getHours();
-
-                if (time < 10) {
-                    greeting = "Good morning";
-                }
-
-                else if (time <20) {
-                    greeting = "Good day";
-                }
-
-                else {
-                    greeting = "Good evening";
-                }
-                documentgetElementById("hour").innerHTML = "Current hour is : "
-                + time;
-                document.getElementsById("greet")innerHTML = greeting;
+            try {
+                addalert("Welcome quest!");
+            }
+            catch(err) {
+                document.getElementById("error_message").innerHTML = err.message;
             }
         </script>
     </body>
-</html>
-
-
-
-<!DOCTYPE html>
-
-<html>
-
-<body>
-
-<p>Click the button to get a time-based greeting:</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="hour"></p>
-
-<p id="greet"></p>
-
-<script>
-
-function myFunction() {
-
-var greeting;
-
-var time = new Date().getHours();
-
-
-if (time < 10) {
-
-greeting = "Good morning";
-
-}
-
-else if (time < 20) {
-
-greeting = "Good day";
-
-}
-
-else {
-
-greeting = "Good evening";
-
-}
-
-document.getElementById("hour").innerHTML = "Current Hour is : " + time;
-
-document.getElementById("greet").innerHTML = greeting;
-
-}
-
-</script>
-
-</body>
-
 </html>
