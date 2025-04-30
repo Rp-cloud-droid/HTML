@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Error Handling</title>
+        <title>Async and Await</title>
     </head>
     <body>
-        <h2>Error Handling</h2>
-        <p id="error_message"></p>
-
+        <h2>Async and Await</h2>
+        <h1 id="result"></h1>
         <script>
-            try {
-                addalert("Welcome quest!");
+            async function add(a, b) {
+                let response = await a + b;
+                display(response);
             }
-            catch(err) {
-                document.getElementById("error_message").innerHTML = err.message;
+            function display(some) {
+                document.getElementById("result").innerHTML = some;
             }
+            add(5, 20);
         </script>
     </body>
 </html>

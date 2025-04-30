@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>String</title>
+        <title>JSON</title>
     </head>
     <body>
-        <h2>Strings</h2>
-        <p id="number_result"></p>
-        <p id="string_result"></p>
+        <h2>JSON</h2>
+        <p id="result"></p>
         <script>
-            var x = 70;
-            var y = 90;
-            document.getElementById("number_result").innerHTML = x+y;
-            document.getElementById("string_result").innerHTML = String(x) + String(y);
+            var myObj = { name: "Riya", age: 12, grade: 7 };
+            var myJSON = JSON.stringify(myObj);
+            var newObj = JSON.parse(myJSON);
+            document.getElementById("result").innerHTML = newObj.name;
         </script>
     </body>
 </html>
